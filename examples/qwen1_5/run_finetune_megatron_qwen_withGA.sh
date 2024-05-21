@@ -130,7 +130,7 @@ elif [ $PR = bf16 ]; then
 elif [ $PR = fp8 ]; then
     pr_options=" \
         --bf16
-        --fp8-hybrid \
+        --fp8-format hybrid \
         --fp8-amax-compute-algo max \
         --fp8-amax-history-len 1024 \
         --transformer-impl transformer_engine"
